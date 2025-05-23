@@ -1,0 +1,109 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      color: #333;
+      background: linear-gradient(to right, rgb(201, 195, 198), rgb(224, 187, 224));
+      /*animation: backgroundColorChange 10s infinite alternate;*/
+    }
+    @keyframes backgroundColorChange {
+      0% { background-color: #f4f4f4; }
+      25% { background-color: #e0f7fa; }
+      50% { background-color: #e8f5e9; }
+      75% { background-color: #fff8e1; }
+      100% { background-color: #f4f4f4; }
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      flex: 1 100%;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 0.5rem;
+      gap: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0.5rem 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .intro {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .intro h2 {
+      font-size: 1.8rem;
+      color: #4CAF50;
+    }
+
+    .publish-container {
+      text-align: center;
+      margin: 2rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    .card {
+      background-color: #eee1e1;
+      border: 1px solid black;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      max-width: 300px;
+      flex: 1 1 250px;
+      text-align: center;
+    }
+    .card h3 {
+      margin: 0.5rem 0;
+      color: #4CAF50;
+    }
+    .card p {
+      margin: 0.2rem 0;
+    }
+    .card button, .publish-btn {
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .card button:hover, .publish-btn:hover {
+      background-color: #45a049;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
