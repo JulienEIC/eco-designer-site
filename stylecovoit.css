@@ -1,0 +1,85 @@
+body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+      }
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      nav a {
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .intro {
+        text-align: center;
+        padding: 2rem;
+        background-color: #e8f5e9;
+      }
+      .ride-list {
+        max-width: 800px;
+        margin: auto;
+        padding: 1rem;
+      }
+      .ride-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border: 1px solid black;
+      }
+      .ride-info {
+        flex: 1;
+      }
+      .ride-info h3 {
+        margin: 0 0 0.5rem 0;
+      }
+      .ride-info p {
+        margin: 0.2rem 0;
+      }
+      .ride-item button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .publish-container {
+        text-align: center;
+        margin: 2rem;
+      }
+      .publish-btn {
+        background-color: #388E3C;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+      @media (max-width: 600px) {
+        .ride-item {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .ride-item button {
+          margin-top: 1rem;
+        }
+      }
